@@ -27,3 +27,16 @@ export type Category = {
         });
         return listData;
       };
+
+      export const getNewsDetail = async (
+        contentId: string,
+        queries?: MicroCMSQueries
+      ) => {
+        const detailData = await client.getListDetail<News>({
+          endpoint: 'news',
+          contentId,
+          queries,
+        });
+        return detailData;
+    };
+    
