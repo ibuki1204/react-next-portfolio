@@ -6,8 +6,8 @@ import { sendGAEvent } from '@next/third-parties/google';
 import styles from './index.module.css';
 
 const initialState = {
-  status: '',
-  message: '',
+  status: "",
+  message: "",
 };
 
 export default function ContactForm() {
